@@ -265,7 +265,7 @@ body.dark-theme {
   background-color: var(--first-color);
   color: #fff;
   padding: 1.5rem 1.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   border-radius: 0.5rem;
   transition: 0.3s;
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);
