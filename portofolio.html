@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/myLogo.png" type="image/x-icon"/>
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/portofolio.css" />
+
+    <title>Portofolio - Realino.Corp</title>
+  </head>
+  <body id="home">
+    
+    <!--=============== HEADER ===============-->
+    <header class="profile container">
+      <!-- Theme button -->
+      <i class="ri-moon-line change-theme" id="theme-button"></i>      
+
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border">
+            <div class="profile__perfil">
+              <!-- Insert your image, according to the example size of the portfolio -->
+              <img src="assets/img/logoBrand.png" alt="" style="width: auto" />
+            </div>
+          </div>
+
+          <h2 class="profile__name">Realino Noval Yanari</h2>
+          <h3 class="profile__profession">Director PT Imperial Nusa Jaya Studio | System Security Addict | Mavennist Developer</h3>
+
+          <ul class="profile__social">
+            <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/realino-noval-336b0b22a/" target="_blank" class="profile__social-link">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://github.com/RealinoNoval" target="_blank" class="profile__social-link">
+              <i class="ri-github-line"></i>
+            </a>
+          </ul>
+        </div>
+
+        <div class="profile__info grid">
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">5</h3>
+            <p class="profile__info-description">
+              Years of <br />
+              work
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+40</h3>
+            <p class="profile__info-description">
+              Completed <br />
+              projects
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">104</h3>
+            <p class="profile__info-description">
+              Satisfied <br />
+              customers
+            </p>
+          </div>
+        </div>
+
+        <div class="alert alert-primary my-alert" role="alert" id="myAlert">
+            <button type="button" class="btn-close" onclick="myFunction2()" data-bs-dismiss="alert" aria-label="Close"></button>
+          <br>
+          <img src="assets/img/cardname.png" class="mt-3" alt="" width="350px" height="250px" style="position :center" > 
+
+        </div>
+
+        <div class="profile__buttons">
+          <!-- Insert your Biodata -->
+          <button type="submit" class="btn btn-primary button btn-view" onclick="myFunction()" style="background: rgb(57, 57, 232)">Cardname<i class="ri-search-line"></i></button>
+          <div class="profile__buttons-small">
+        </div>
+      </div>
+    </header>
+    <br />
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <section class="filters container">
+        <h2 class="profile__data">Gallery's</h2>
+        <!--=============== FILTERS TABS ===============-->
+        <ul class="filters__content">
+          <button class="filters__button filter-tab-active" data-target="#projects">Projects</button>
+          <button class="filters__button" data-target="#skills">Skills</button>
+        </ul>
+
+        <div class="filters__sections">
+          <!--=============== PROJECTS ===============-->
+          <div class="projects__content grid filters__active" data-content id="projects">
+            <article class="projects__card">
+              <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+              <img src="assets/img/battery.png" alt="" class="projects__img" />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">HTML,CSS,Javascript</span>
+                  <h3 class="projects__title">Live Battery Site</h3>
+                  <a href="countdown.html" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/Parking.png" alt="" class="projects__img" />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">C++ Programming</span>
+                  <h3 class="projects__title">Parking Ticket Payment Program</h3>
+                  <a href="countdown.html" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/myLogo.png" alt="" class="projects__img" />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">PHP - Web</span>
+                  <h3 class="projects__title">Travel Site</h3>
+                  <a href="countdown.html" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/PCA.png" alt="" class="projects__img" />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Python</span>
+                  <h3 class="projects__title">Principal Component Analysis</h3>
+                  <a href="countdown.html" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img src="assets/img/myLogo.png" alt="" class="projects__img" />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Design</span>
+                  <h3 class="projects__title">Music app design</h3>
+                  <a href="countdown.html" class="projects__button button button__small">
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+                <img src="assets/img/myLogo.png" alt="" class="projects__img" />
+  
+                <div class="projects__modal">
+                  <div>
+                    <span class="projects__subtitle">Python</span>
+                    <h3 class="projects__title">Based Learning</h3>
+                    <a href="countdown.html" class="projects__button button button__small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+          </div>
+         
+          <div class="filter_sections">
+            
+          </div>
+
+          <br>
+
+          <p class="profile__data">If you want to know about other my free projects, you can check on my <a href="https://github.com/RealinoNoval">github.</a></p>
+          <p class="profile__data">Or back to <a href="index.html">HomePage</a></p>
+
+          <!--=============== SKILLS ===============-->
+          <div class="skills__content grid" data-content id="skills">
+            <div class="skills__area">
+              <h3 class="skills__title">Frontend Developer</h3>
+
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">HTML</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">CSS</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">JavaScript</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">JSON</h3>
+                      <span class="skills__level">Intermediate</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">React</h3>
+                      <span class="skills__level">Intermediate</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Bootstrap</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Git</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__area">
+              <h3 class="skills__title">Backend Developer</h3>
+
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">PHP</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">MySQL</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Firebase</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Games Developt</h3>
+                      <span class="skills__level">Intermediate</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Python</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Node Js</h3>
+                      <span class="skills__level">Intermediate</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Maven</h3>
+                      <span class="skills__level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Mobile Apps</h3>
+                      <span class="skills__level">Intermediate</span>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+                
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <span class="footer__copy"> &#169; RealinoNovalY. All rigths reserved </span>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/portofolio.js"></script>
+
+    <!-- alert -->
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toogle="popover"]'))
+      var popoverList  = popoverTriggerList.map(function (popoverTriggerListEl){
+        return new bootstrap.Popover(popoverTriggerListEl)
+      })
+
+     var myAlert = document.getElementById('myAlert');
+
+     myAlert.style.display = 'none'
+
+     function myFunction(){
+       myAlert.style.display = 'block'
+     }
+
+    </script>
+
+    <script>
+      
+
+      function myFunction2(){
+        myAlert.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>
