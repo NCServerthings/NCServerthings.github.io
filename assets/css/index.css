@@ -94,7 +94,7 @@ ul li:last-child::after {
 .imageHome {
   background-color: rgb(251, 231, 231);
   position: relative;
-  transform: skewY(-15deg);
+  transform: skewY(-1deg);
   clip-path: inset();
-  border: 4px solid blue;
+  border: 2px solid blue;
 }
