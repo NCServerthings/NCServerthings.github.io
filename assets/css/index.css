@@ -18,7 +18,7 @@ h1 {
   position: relative;
   padding-bottom: 4rem;
   transform: skewY(-15deg);
-  color: #999;
+  color: rgb(255, 255, 255);
 }
 
 ul {
@@ -76,7 +76,7 @@ ul li:hover::after {
 
 ul li a {
   text-decoration: none;
-  color: #999;
+  color: rgb(255, 255, 255);
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.05em;
